@@ -45,6 +45,7 @@ img {
   max-width: 100%;
 }
 
+
 /*/////////// HEADER //////////*/
 
 .header {
@@ -127,7 +128,15 @@ img {
   display: flex;
   align-items: center;
   margin-left: auto;
+  color: var(--primary-text-color);
 }
+
+
+.icon-envelope {
+    margin-right: 10px; 
+  fill: currentColor;
+}
+
 
 .auth-nav .item + .item {
   margin-left: 50px;
@@ -135,9 +144,10 @@ img {
 
 
 .auth-nav .link {
-  display: block;
+  display: flex;
   padding-top: 32px;
   padding-bottom: 32px;
+  align-items: center;
 
   color: var(--primary-text-color);
   font-weight: 500;
@@ -152,15 +162,6 @@ img {
   color: var(--accent-color);
 }
 
-.link-mail::before {
-  display: inline-block;
-  content: "";
-  width: 16px;
-  height: 12px;
-  margin-right: 10px;
-  background-image: url(../images/icons.svg/envelope.svg);
-  background-size: contain;
-}
 
 
 /*/////////// HERO //////////*/
@@ -251,36 +252,15 @@ url(../images/bgc-img.jpg);
   width: 270px;
 }
 
-.features .item::before {
-  content: "";
-  display: block;
- height: 120px;
- margin-bottom: 30px;
-  background-repeat: no-repeat;
- background-position: center;
- background-color: #F5F4FA;
- border-radius: 4px;
+.icon-bgc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+height: 120px;
+margin-bottom: 30px;
+  background-color: #F5F4FA;
+  border-radius: 4px;
 }
-
-.item.icon-antenna::before {
- background-image: url(../images/antenna.svg);
-}
-
-.item.icon-clock::before {
-  background-image: url(../images/clock.svg);
-}
-
-.item.icon-diagram::before {
-  background-image: url(../images/diagram.svg);
-}
-
-.item.icon-astronaut::before {
-  background-image: url(../images/astronaut.svg);
-}
-
-/* .features .item:nth-child(1)::before {
-  background-image: url(../images/antenna.svg);
-} */
 
 
 .features .title {
@@ -293,6 +273,17 @@ url(../images/bgc-img.jpg);
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
 }
 
 .features .text {
@@ -517,3 +508,6 @@ url(../images/bgc-img.jpg);
   font-size: 16px;
   line-height: 1.87;
 }
+
+
+
