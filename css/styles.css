@@ -365,7 +365,7 @@ body {
 
 .list-icon-team {
   display: flex;
-  margin-left: 32px;
+  justify-content: center;
 }
 
 .team-social-links {
@@ -389,6 +389,42 @@ body {
   fill: currentColor;
 }
 
+.team-social-links.last {
+  margin-right: 0;
+}
+
+/*--------- Clients--------- */
+
+.clients-list {
+  display: flex;
+  justify-content: center;
+}
+
+.clients-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.clients-link {
+  display: flex;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+}
+
+.icon-clients {
+  fill: currentColor;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  color: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
 /*/////////// FOOTER //////////*/
 
 .footer {
@@ -398,6 +434,10 @@ body {
   margin-right: auto;
 
   background-color: #2f303a;
+}
+
+.footer-content {
+  display: flex;
 }
 
 /* Logo footer */
@@ -434,6 +474,55 @@ body {
 .address .link:hover,
 .address .link:focus {
   color: var(--accent-color);
+}
+
+/* -----------Join Us----------- */
+
+.join-us {
+  width: 206px;
+  height: 80px;
+  margin-left: 70px;
+  padding-top: 12px;
+}
+
+.join-us-text {
+  margin-bottom: 20px;
+
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+
+.join-us-list {
+  display: flex;
+}
+
+.join-us-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.join-us-link {
+  display: flex;
+  width: 44px;
+  height: 44px;
+  align-items: center;
+  list-style: none;
+  border-radius: 50px;
+
+  color: var(--white-color);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.join-us-link:hover,
+.join-us-link:focus {
+  background-color: var(--accent-color);
+}
+
+.join-us-icon {
+  fill: currentColor;
 }
 
 /*/////////////////////////////// PORTFOLIO.HTML PAGE /////////////////////////*/
@@ -507,6 +596,16 @@ body {
 
 .projects .item:nth-last-child(-n + 3) {
   margin-bottom: 0;
+}
+
+.projects-link {
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  color: #757575;
 }
 
 /* .projects .item {
